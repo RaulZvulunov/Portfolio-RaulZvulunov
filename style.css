@@ -230,6 +230,7 @@ nav{
     font-weight: 600;
     background-color: #1ae0ec;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .aboutme2 img{
@@ -286,6 +287,7 @@ nav{
     border-radius: 45px;
     border: 1px solid #3b3b3b;
     margin-bottom: 20px;
+    cursor: pointer;
 } 
 
 /* צור קשר */
@@ -340,6 +342,7 @@ input{
     padding: 8px 10px;
     margin-bottom: 16px;
     border: none;
+    cursor: pointer;
 }
 
 #Heebo{
