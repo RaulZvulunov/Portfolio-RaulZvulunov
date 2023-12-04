@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    font-family: 'Heebo', sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+
+.navlinks ul{
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+.navlinks ul li{
+    list-style: none;
+     transition: all 0.2s ease 0s;
+}
+
+.navlinks ul li:hover{
+    background-color: #b3f3f7;
+    border-radius: 45px;
+}
+
+.navlinks ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+}
+
+.navlogo p{
+    font-family: 'Satisfy', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navlogo img{
+    width: 50px;
+    border-radius: 45%;
+    margin: 10px 0px 10px 15px;
+}
+
+.toggle_button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle_button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .toggle_button{
+        display: flex;
+
+    }
+
+    .navlinks{
+        display: none;
+        width:100%;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navlinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navlinks li{
+        text-align: center;
+    }
+
+    .navlinks li a{
+        padding: .5rem 1rem;
+    }
+
+    .navlinks.active{
+        display: flex;
+    }
+
+    .navlogo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navlinks ul li:hover{
+        background-color: #b3f3f7;
+        border-radius: 0px;
+    }
+}
+
+/* שם הפרויק */
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../images/bg.jpeg);
+    background-color: #b3f3f7;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: 100%;
+    box-shadow: inset 0px 3px 8px rgba(121, 120, 120, 0.445);
+}
+
+.divs1 {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    padding-top: 35px;
+    margin-bottom: 20px;
+}
+
+.divs1 h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.section1 button {
+    background-color: #1ae0ec;
+    color: #3b3b3b;
+    padding:6px 14px 6px 14px;
+    border-radius: 45px;
+    border: 1px solid #3b3b3b;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* טכנולוגיות */
+
+.technologies{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+    display: flex;
+    justify-content: center;
+}
+
+.technologies img{
+    width: 75px;
+}
+
+/* תמונת הפרויקט */
+
+.section2{
+    background-color: #f3f3f3;
+
+}
+
+.projectPicture{
+    width: 80vw;
+    display: flex;
+    padding-bottom: 7%;
+    padding-top: 7%;
+    margin: 0 10%;
+}
+
+.projectPicture img{
+    width: 100%;
+    
+}
+
+/* ---------------------------------------------------------------- */
+
+.pagebottom{
+    display: flex;
+    background-color: #222222;
+    color: white;
+}
+
+.pagebottom p{
+    font-size: 8px;
+}
+
+#name{
+    margin-right: 15px;
+}
+
+/* Media Queries for tablets */
+
+@media screen and (min-width: 481px){
+    .technologies img{
+        width: 80px;
+    }
+}
+
+/* Media Queries for laptops and up */
+
+@media screen and (min-width: 769px){
+    .technologies img{
+        width: 85px;
+    }
+}
